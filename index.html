@@ -5,14 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xavier Rao</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Fade In Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/cd91d3b6d2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>
-        Coming Soon...
-    </h1>
-    <p style="font-size: larger;">
-        It's in the works
-    </p>
-    <script src="blog.js"></script>
+    <!-- Header -->
+    <header id="header">
+        <nav id="nav" data-aos="fade-in">
+            <div class="container nav-bar">
+                <ul class="nav-links">
+                    <li>
+                        <a href="#projects" class="link">
+                            <i class="fas fa-code"></i> Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#resume" class="link">
+                            <i class="fas fa-file-alt"></i> Resume
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="link">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div data-aos="fade-up">
+                <h1 class="h1">
+                    Xavier Rao
+                </h1>
+                <p class="p">
+                    Quick intro
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="button-blue">
+                        <i class="fas fa-code"></i> Projects
+                    </a>
+                    <a href="https://github.com/xavierrao" class="button-blue-outline mx-1" id="projects-button" target="_blank">
+                        <i class="fab fa-github"></i> Github
+                    </a>
+                    <a href="#resume" class="button-blue">
+                        <i class="fas fa-file-alt"></i> Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="h2">My Projects</h2>
+            <div class="project-row" data-aos="fade-up">
+                <div class="project-left">
+                    <h3>TypeSpeedrun</h3>
+                    <p>Description</p>
+                    <div class="project-links">
+                        <a href="https://www.github.com/xavierrao/typespeed" target="_blank" class="button-blue-outline button-small">
+                            <i class="fab fa-github"></i> Github
+                        </a>
+                    </div>
+                </div>
+                <div class="project-right">
+                    <img src="img/typespeed.png" alt="TypeSpeedrun Project">
+                </div>
+            </div>
+            <div class="project-row" data-aos="fade-up">
+                <div class="project-left">
+                    <h3>Cat Rescue</h3>
+                    <p>Description</p>
+                    <div class="project-links">
+                        <a href="https://www.github.com/xavierrao/" target="_blank" class="button-blue-outline button-small">
+                            <i class="fab fa-github"></i> Github
+                        </a>
+                    </div>
+                </div>
+                <div class="project-right">
+                    <img src="/img/.png" alt="Cat Rescue">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="h2">My Resume</h2>
+            <div class="resume-card" data-aos="zoom-in">
+                <div class="resume-img">
+                    <img src="/img/.png" alt="My Resume">
+                </div>
+                <div class="download">
+                    <!-- Download Button -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="h2">Contact Me</h2>
+            <div class="contact-cards">
+                <div class="card" data-aos="fade-in">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>xavierrao23@gmail.com</p>
+                </div>
+                <div class="card" data-aos="fade-in" data-aos-delay="100">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/xavierrao" target="_blank">xavierrao</a>
+                </div>
+                <div class="card" data-aos="fade-in" data-aos-delay="200">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/xavier-rao/" target="_blank">xavier-rao</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- To Top of Page -->
+    <!-- <a id="backToTopButton" class="button-blue">
+        <i class="fa fa-chevron-up"></i>
+    </a> -->
+
+    <script src="portfolio.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>
