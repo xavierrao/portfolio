@@ -27,7 +27,7 @@ a {
     transition: all 0.3s ease;
 }
 
-.button-blue-outline, .button-dark, .button-blue, .button .button-to-top {
+.button-dark, .button-white, .button-to-top {
     display: inline-block;
     padding: 0.8rem 1.5rem;
     transition: all 0.3s;
@@ -36,53 +36,40 @@ a {
     cursor: pointer;
 }
 
-.button-blue-outline {
-    color: #3b82f6;
-    background-color: transparent;
-    border: 2px solid #3b82f6;
+.button-dark {
+    color: #BDBEC1;
+    background-color: darkslategray;
+    border: 2px solid #BDBEC1;
 }
   
-.button-blue {
-    color: white;
-    background-color: #3b82f6;
-    border: 2px solid #3b82f6;
+.button-white {
+    color: #111828;
+    background-color: #FFFFFF;
 }
 
 .button-small {
   padding: 0.5rem 1rem;
 }
 
-.button-blue:hover {
+.button-white:hover {
     transition: all 0.3s ease;
-    background: #0b63f3;
-    border: 2px solid #0b63f3;
     scale: 1.05;
 }
-.button-blue-outline:hover {
+.button-dark:hover {
     color: white;
-    background-color: #3b82f6;
     scale: 1.05;
 }
 
 .button-to-top {
     color: white;
-    background-color: #3b82f6;
-    border: 2px solid #3b82f6;
+    background-color: darkgray;
     border-radius: 50%;
 }
 
 .button-to-top:hover {
     transition: all 0.3s ease;
-    background: #0b63f3;
-    border: 2px solid #0b63f3;
+    background: darkgray;
     scale: 1.05;
-}
-
-header {
-    background: #181a1b;
-    background-size: cover;
-    min-height: 80vh;
-    position: relative;
 }
 
 header nav {
@@ -127,6 +114,11 @@ header nav .nav-bar .nav-links a {
     color: white;
 }
 
+header nav .nav-bar .nav-links .link.active {
+    font-weight: bold;
+    color: yellow;
+}
+
 header nav .nav-bar .nav-links .link::after {
     content: "";
     position: relative;
@@ -143,7 +135,14 @@ header nav .nav-bar .nav-links .link:hover::after {
     width: 100%;
 }
 
-header .hero {
+.home {
+    background: #181a1b;
+    background-size: cover;
+    min-height: 80vh;
+    position: relative;
+}
+
+.home .hero {
     z-index: 5;
     position: absolute;
     top: 50%;
@@ -151,7 +150,7 @@ header .hero {
     transform: translate(-50%, -50%);
 }
 
-header .hero .h1 {
+.home .hero .h1 {
     color: white;
     letter-spacing: 2px;
     white-space: nowrap;
@@ -160,7 +159,7 @@ header .hero .h1 {
     font-weight: 400;
 }
 
-header .hero .p {
+.home .hero .p {
     color: #dcdcdc;
     line-height: 1.6;
     font-size: clamp(1.5rem, 2vw, 1.5rem);
@@ -170,7 +169,7 @@ header .hero .p {
     padding: 0.5rem;
 }
 
-header .hero .hero-buttons {
+.home .hero .hero-buttons {
     white-space: nowrap;
     text-align: center;
     margin-top: 1rem;
@@ -268,6 +267,7 @@ header .hero .hero-buttons {
 .contact {
     background: white;
     padding: 3rem 0;
+    margin-bottom: 10rem;
 }
 
 .contact h2 {
@@ -296,12 +296,12 @@ header .hero .hero-buttons {
 }
 
 .contact .contact-cards .card a {
-    color: #3b82f6;
+    color: darkslategray;
 }
 
 .contact .contact-cards .card i {
     font-size: 3.5rem;
-    color: #3b82f6;
+    color: darkslategray;
     margin-bottom: 1rem;
     transition: 0.4s;
 }
