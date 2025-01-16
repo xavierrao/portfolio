@@ -230,6 +230,20 @@ header .hero .hero-buttons {
     border-radius: 3px;
 }
 
+.resume .container .resume-card .resume-img {
+    width: 100%;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.resume .container .resume-card .resume-img img {
+    width: 100%
+}
+
+.resume .container .resume-card .download {
+    text-align: center;
+}
+
 .contact {
     background: white;
     padding: 3rem 0;
