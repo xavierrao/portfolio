@@ -27,7 +27,7 @@ a {
     transition: all 0.3s ease;
 }
 
-.button-blue-outline, .button-dark, .button-blue, .button {
+.button-blue-outline, .button-dark, .button-blue, .button .button-to-top {
     display: inline-block;
     padding: 0.8rem 1.5rem;
     transition: all 0.3s;
@@ -64,6 +64,20 @@ a {
     scale: 1.05;
 }
 
+.button-to-top {
+    color: white;
+    background-color: #3b82f6;
+    border: 2px solid #3b82f6;
+    border-radius: 50%;
+}
+
+.button-to-top:hover {
+    transition: all 0.3s ease;
+    background: #0b63f3;
+    border: 2px solid #0b63f3;
+    scale: 1.05;
+}
+
 header {
     background: #181a1b;
     background-size: cover;
@@ -73,17 +87,30 @@ header {
 
 header nav {
     width: 100%;
+    position: fixed;
+    top: 15px;
+    z-index: 99;
 }
 
 header nav .nav-bar {
-    position: relative;
+    background-color: #111214;
+    opacity: 0.9;
     display: flex;
-    justify-content: center;
-    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 9999px;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+/* Make opacity 0.95 when past hero section but 1 on hover */
+
+header nav .nav-bar:hover {
+    opacity: 1;
 }
 
 header nav .nav-bar .nav-links {
-    z-index: 1000;
     display: flex;
 }
 
@@ -91,8 +118,7 @@ header nav .nav-bar .nav-links li {
     list-style: none;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-left: 2rem;
+    margin: 0 1rem;
 }
 
 header nav .nav-bar .nav-links a {
@@ -157,6 +183,7 @@ header .hero .hero-buttons {
 
 .projects h2 {
     text-align: center;
+    margin-top: 3rem;
     margin-bottom: 3rem;
     font-weight: bold;
 }
@@ -179,10 +206,7 @@ header .hero .hero-buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    padding-top: 2.5rem;
-    padding-bottom: 1.75rem;
+    padding: 2.5rem 2.5rem 1.75rem;
 }
 
 .projects .project-row .project-left h3 {
@@ -195,10 +219,7 @@ header .hero .hero-buttons {
 
 .projects .project-row .project-right {
     width: 50%;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    padding-top: 2.5rem;
-    padding-bottom: 1.75rem;
+    padding: 2.5rem 2.5rem 1.75rem;
 }
 
 .projects .project-row .project-right img {
@@ -218,6 +239,7 @@ header .hero .hero-buttons {
 .resume .container h2 {
     text-align: center;
     color: black;
+    padding-top: 1rem;
     margin-bottom: 3rem;
 }
 
@@ -232,8 +254,7 @@ header .hero .hero-buttons {
 
 .resume .container .resume-card .resume-img {
     width: 100%;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding: 0 2.5rem;
 }
 
 .resume .container .resume-card .resume-img img {
@@ -289,17 +310,17 @@ header .hero .hero-buttons {
     transform: translateY(-20%);
 }
 
-/* #backToTopButton {
+#backToTopButton {
     position: fixed;
     right: 20px;
     bottom: 20px;
     padding: 0.5rem 0.9rem;
     opacity: 0;
     visibility: hidden;
-    z-index: 1000;
+    z-index: 99;
 }
 
 #backToTopButton.show {
     opacity: 1;
     visibility: visible;
-} */
+}
