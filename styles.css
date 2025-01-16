@@ -114,9 +114,8 @@ header nav .nav-bar .nav-links a {
     color: white;
 }
 
-header nav .nav-bar .nav-links .link.active {
-    font-weight: bold;
-    color: yellow;
+header nav .nav-bar .nav-links .link.active::after {
+    width: 100%;
 }
 
 header nav .nav-bar .nav-links .link::after {
@@ -127,7 +126,7 @@ header nav .nav-bar .nav-links .link::after {
     height: 2px;
     top: 3px;
     margin: auto;
-    background: #3b82f6;
+    background: darkgray;
     transition: width 0.3s ease;
 }
 
