@@ -25,7 +25,7 @@ function scrollTracker() {
 
     sections.forEach((section) => {
         const sectionHeight = section.offsetHeight;
-        const sectionTop = section.offsetTop - 100;
+        const sectionTop = section.offsetTop - 300;
         const id = section.getAttribute("id");
         const currentNavLink = document.querySelector(`.nav-links a[href*="#${id}"]`);
         if(

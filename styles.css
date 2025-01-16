@@ -14,11 +14,6 @@ body {
     line-height: 1.5;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 .container {
     max-width: 1200px;
     padding: 1.5rem 1.5rem;
@@ -28,6 +23,7 @@ a {
 }
 
 .button-dark, .button-white, .button-to-top {
+    text-decoration: none;
     display: inline-block;
     padding: 0.8rem 1.5rem;
     transition: all 0.3s;
@@ -209,6 +205,7 @@ header nav .nav-bar .nav-links .link:hover::after {
 
 .projects .project-row .project-left h3 {
     font-size: 1.25rem;
+    color: black;
 }
 
 .projects .project-row .project-left .project-links {
@@ -266,7 +263,6 @@ header nav .nav-bar .nav-links .link:hover::after {
 .contact {
     background: white;
     padding: 3rem 0;
-    margin-bottom: 10rem;
 }
 
 .contact h2 {
@@ -307,6 +303,17 @@ header nav .nav-bar .nav-links .link:hover::after {
 
 .contact .contact-cards .card i:hover {
     transform: translateY(-20%);
+}
+
+footer {
+    background: #181a1b;
+    color: white;
+    min-height: 8vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 #backToTopButton {
