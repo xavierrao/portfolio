@@ -6,7 +6,8 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Nunito", sans-serif;
+    font-family: Verdana, sans-serif;
+
 }
 
 body {
@@ -135,14 +136,13 @@ header nav .nav-bar .nav-links .link:hover::after {
     background-size: cover;
     min-height: 80vh;
     position: relative;
+    background-image: url("img/home_background.jpg");
 }
 
 .home .hero {
     z-index: 5;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 40%;
 }
 
 .home .hero .h1 {
@@ -150,14 +150,14 @@ header nav .nav-bar .nav-links .link:hover::after {
     letter-spacing: 2px;
     white-space: nowrap;
     text-align: center;
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(2rem, 5vw, 2.5rem);
     font-weight: 400;
 }
 
 .home .hero .p {
     color: #dcdcdc;
     line-height: 1.6;
-    font-size: clamp(1.5rem, 2vw, 1.5rem);
+    font-size: clamp(1.3rem, 2vw, 1.3rem);
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
@@ -171,7 +171,7 @@ header nav .nav-bar .nav-links .link:hover::after {
 }
 
 .projects {
-    background: white;
+    background: #F0F0F0;
     padding: 3rem 0;
 }
 
@@ -192,14 +192,12 @@ header nav .nav-bar .nav-links .link:hover::after {
 .projects .project-row {
     display: flex;
     margin-bottom: 3rem;
-    background-color: rgb(243 244 246);
-    border-color: rgba(0, 0, 0, 0.05);
-    border-width: 1px;
+    background-color: rgb(204, 206, 211);
     border-radius: 0.5rem;
 }
 
 .projects .project-row:hover {
-    background-color: rgb(229 231 235);
+    background-color: rgb(179, 181, 186);
 }
 
 .projects .project-row .project-left {
@@ -212,7 +210,10 @@ header nav .nav-bar .nav-links .link:hover::after {
 
 .projects .project-row .project-left h3 {
     font-size: 1.5rem;
-    color: black;
+}
+
+.projects .project-row .project-left p {
+    font-size: 0.9rem;
 }
 
 .projects .project-row .project-left .project-links {
@@ -222,7 +223,13 @@ header nav .nav-bar .nav-links .link:hover::after {
 .projects .project-row .project-left .madeWith {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 0.5rem;
+}
+
+.projects .project-row .project-left .madeWith p {
+    font-weight: lighter;
+    color: rgb(82, 89, 102);
 }
 
 .projects .project-row .project-left .madeWith i {
@@ -236,7 +243,6 @@ header nav .nav-bar .nav-links .link:hover::after {
 
 .projects .project-row .project-right img {
     width: 100%;
-    border: 1px solid lightgray;
 }
 
 .resume {
@@ -278,7 +284,7 @@ header nav .nav-bar .nav-links .link:hover::after {
 }
 
 .contact {
-    background: white;
+    background: #F0F0F0;
     padding: 3rem 0;
 }
 
