@@ -182,6 +182,13 @@ header nav .nav-bar .nav-links .link:hover::after {
     font-weight: bold;
 }
 
+.projects .container ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
 .projects .project-row {
     display: flex;
     margin-bottom: 3rem;
@@ -204,12 +211,22 @@ header nav .nav-bar .nav-links .link:hover::after {
 }
 
 .projects .project-row .project-left h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: black;
 }
 
 .projects .project-row .project-left .project-links {
     margin-top: 1rem;
+}
+
+.projects .project-row .project-left .madeWith {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.projects .project-row .project-left .madeWith i {
+    font-size: 40px;
 }
 
 .projects .project-row .project-right {
