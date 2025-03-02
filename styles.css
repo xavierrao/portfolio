@@ -143,6 +143,7 @@ header nav .nav-bar .nav-links .link:hover::after {
     z-index: 5;
     position: absolute;
     top: 40%;
+    left: 2%;
 }
 
 .home .hero .h1 {
