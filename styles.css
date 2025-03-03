@@ -148,7 +148,7 @@ header nav .nav-bar .nav-links .link:hover::after {
     z-index: 5;
     position: absolute;
     top: 40%;
-    left: 2%;
+    left: 3%;
 }
 
 .home .hero .h1 {
@@ -163,9 +163,9 @@ header nav .nav-bar .nav-links .link:hover::after {
 .home .hero .p {
     color: #dcdcdc;
     line-height: 1.6;
-    font-size: clamp(1.3rem, 2vw, 1.3rem);
+    font-size: clamp(1.2rem, 2vw, 1.2rem);
     text-align: center;
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 0.5rem;
 }
