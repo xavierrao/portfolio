@@ -13,15 +13,7 @@ portfolio/
 ├── index.html          # Main page
 ├── styles.css          # All styles + responsive breakpoints
 ├── portfolio.js        # Nav tracking, scroll effects, back-to-top
-└── img/                # Project screenshots, resume image, background
-    ├── home_background.jpg
-    ├── resume.png
-    ├── XavierRao_Resume.pdf
-    ├── guesstherank.png
-    ├── mostlikelyto.png
-    ├── typespeed.png
-    ├── infinitetictactoe.png
-    └── catrescue.png
+└── img/                # Background, resume, and project screenshots
 ```
 
 ## Features
