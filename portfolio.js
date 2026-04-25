@@ -2,12 +2,33 @@
 
 const backToTopButton = $("#backToTopButton");
 
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 300) {
-    backToTopButton.addClass("show");
-  } else {
-    backToTopButton.removeClass("show");
-  }
+// Nav fade on scroll
+const nav = document.getElementById("nav");
+let lastScrollY = window.scrollY;
+let scrollTimeout;
+
+window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+
+    // Show back-to-top button
+    if (currentScrollY > 300) {
+        backToTopButton.addClass("show");
+    } else {
+        backToTopButton.removeClass("show");
+    }
+
+    // Fade nav out while scrolling, fade back in when stopped
+    if (currentScrollY > 80) {
+        nav.classList.add("nav-hidden");
+    }
+
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+        nav.classList.remove("nav-hidden");
+        lastScrollY = currentScrollY;
+    }, 350);
+
+    lastScrollY = currentScrollY;
 });
 
 backToTopButton.on("click", function (e) {
