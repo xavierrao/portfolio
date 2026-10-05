@@ -256,6 +256,14 @@ header nav .nav-bar .nav-links .link:hover::after {
     width: 100%;
 }
 
+.project-right img.phone-mockup {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
 .resume {
     background: white;
     padding: 3rem 0;
